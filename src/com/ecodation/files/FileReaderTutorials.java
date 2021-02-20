@@ -12,7 +12,7 @@ public class FileReaderTutorials {
 			while ((okunanSatir = bufferedReader.readLine()) != null) {
 				okunanDeger += okunanSatir;
 			}
-			System.out.println(okunanDeger);
+			System.out.println(okunanDeger + "");
 
 		} catch (Exception e) {
 			e.printStackTrace();
