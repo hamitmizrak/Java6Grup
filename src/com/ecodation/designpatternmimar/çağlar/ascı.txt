@@ -1,0 +1,39 @@
+package com.mavirestorant;
+
+public class Ascı {
+	private String yemek;
+	private String malzemeler;
+
+	public Ascı() {
+		super();
+		this.yemek = "yemek verisi girilmedi";
+		this.malzemeler = "yemek verisi girilmedi";
+	}
+
+	public Ascı(String yemek, String malzemeler) {
+		super();
+		this.yemek = yemek;
+		this.malzemeler = malzemeler;
+	}
+
+	public String getYemek() {
+		return yemek;
+	}
+
+	public void setYemek(String yemek) {
+		this.yemek = yemek;
+	}
+
+	public String getMalzemeler() {
+		return malzemeler;
+	}
+
+	public void setMalzemeler(String malzemeler) {
+		this.malzemeler = malzemeler;
+	}
+
+	@Override
+	public String toString() {
+		return "Ascı [yemek=" + yemek + ", malzemeler=" + malzemeler + "]";
+	}
+}

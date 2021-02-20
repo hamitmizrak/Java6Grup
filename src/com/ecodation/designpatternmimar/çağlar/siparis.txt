@@ -1,0 +1,20 @@
+package com.mavirestorant;
+
+public class Siparis {
+	public static void main(String[] args) {
+
+		Garson garson = new Garson();
+		garson.setIkram("Su,Turşu,Kağıt Havlu");
+		garson.setMasa(10);
+		System.out.println(garson);
+
+		Ascı ascı = new Ascı();
+		ascı.setMalzemeler("Yumurta, Peynir, Zeytin, Reçel, Salatalık, Domates, Ekmek");
+		ascı.setYemek("Kahvaltı");
+		System.out.println(ascı);
+
+		Kasıyer kasıyer = new Kasıyer();
+		kasıyer.setHesap(50);
+		System.out.println(kasıyer);
+	}
+}

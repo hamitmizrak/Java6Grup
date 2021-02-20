@@ -1,0 +1,40 @@
+package com.mavirestorant;
+
+public class Garson {
+	private String ikram;
+	private int masa;
+
+	public Garson() {
+		super();
+		this.ikram = "ikram verisi girilmedi";
+		this.masa = 0;
+	}
+
+	public Garson(String yemek, String ikram, int masa) {
+		super();
+		this.ikram = ikram;
+		this.masa = masa;
+	}
+
+	public String getIkram() {
+		return ikram;
+	}
+
+	public void setIkram(String ikram) {
+		this.ikram = ikram;
+	}
+
+	public int getMasa() {
+		return masa;
+	}
+
+	public void setMasa(int masa) {
+		this.masa = masa;
+	}
+
+	@Override
+	public String toString() {
+		return "Garson [ikram=" + ikram + ", masa=" + masa + "]";
+	}
+
+}
