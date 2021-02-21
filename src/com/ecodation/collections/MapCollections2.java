@@ -1,11 +1,9 @@
 package com.ecodation.collections;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
-public class MapCollections {
+public class MapCollections2 {
 
 	// List = Tekrarlı veya Tekrarsız veriler
 	// Set = Tekrarsız veriler
@@ -28,18 +26,21 @@ public class MapCollections {
 		mapList.put(5, "Emre");
 		mapList.put(6, "Esra");
 		mapList.put(7, "Sarp");
-
-		mapList.put(8, "Hamit");
 		mapList.put(8, "Seda");
-		mapList.put(8, "Ahmet");
 
 		// lambda expression
-		// mapList.entrySet().forEach(System.out::println);
-		Set set = mapList.keySet();
+		mapList.entrySet().forEach(System.out::println);
 
-		Iterator ite = set.iterator();
-		while (ite.hasNext()) {
-			System.out.println(mapList.get(ite.next()));
+		System.out.println("-------------------");
+		// key sadece
+		for (Integer tempNumber : mapList.keySet()) {
+			System.out.print(tempNumber + " ");
+		}
+
+		System.out.println("\n++++++++++++++++++");
+		// value sadece
+		for (Object tempObject : mapList.values()) {
+			System.out.print(tempObject + " ");
 		}
 
 	}

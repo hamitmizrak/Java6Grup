@@ -1,10 +1,9 @@
 package com.ecodation.collections;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ListCollections {
+public class ListCollections7 {
 
 	// List = Tekrarlı veya Tekrarsız veriler
 	// Set = Tekrarsız veriler
@@ -19,30 +18,22 @@ public class ListCollections {
 
 	public static void main(String[] args) {
 
-		List<String> sehirList = new ArrayList<>();
+		List<String> sehirList = new LinkedList<>();
 		sehirList.add("Malatya");
 		sehirList.add("Ankara");
 		sehirList.add("İstanbul");
 		sehirList.add("Kayseri");
 
-		Iterator ite = sehirList.iterator();
-		while (ite.hasNext()) {
-			System.out.println(ite.next());
-		}
-		System.out.println("--------------");
+		List<String> sehirList2 = new LinkedList<>();
+		sehirList2.add("Mersin");
+		sehirList2.add("Elazığ");
+		sehirList2.add("Bursa");
+
+		sehirList.addAll(sehirList2);
+
 		for (Object temp : sehirList) {
 			System.out.println(temp);
 		}
-		System.out.println("--------------");
-		sehirList.remove(0);
-		for (Object temp : sehirList) {
-			System.out.println(temp);
-		}
-		sehirList.clear();
-		for (Object temp : sehirList) {
-			System.out.println(temp);
-		}
-		System.out.println("-------------");
 
 	}
 
